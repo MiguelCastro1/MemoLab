@@ -7,7 +7,7 @@ const cardsList = [];
 
 // TODO: Use svg or png format to display icons according the file path
 const uri = document.baseURI;
-const uriContains = uri[0] + uri[1] + uri[2] + uri[3] + uri[4] + uri[5] + uri[6] + uri[7];
+const uriContains = uri[0] + uri[1] + uri[2] + uri[3] + uri[4] + uri[5] + uri[6] + uri[7] ;
 try {
     if (uriContains.toLowerCase() === 'file:///') throw true;
 	if (uriContains.toLowerCase() !== 'file:///') throw false;
@@ -61,7 +61,7 @@ const sec = document.querySelector('.sec');
 let openCards = [];
 let matchedCards = [];
 let movesCounter = 0;
-moves.textContent = movesCounter + ' Moves';
+moves.textContent = movesCounter + ' Jogadas';
 
 // TODO: Reset game
 restartBtn.addEventListener('click', function() {
@@ -140,7 +140,7 @@ function show(e) {
     // Close open cards after sometime
     if (openCards.length === 2) {
         movesCounter++;
-        moves.textContent = movesCounter === 1 ? 1 + ' Move' : movesCounter + ' Moves';
+        moves.textContent = movesCounter === 1 ? 1 + ' Jogada' : movesCounter + ' Jogadas';
         starScore('.stars', 'inline-block');
         match();
     }
@@ -259,17 +259,17 @@ function starScore(name, display, color) {
     if (movesCounter > 12 && movesCounter < 20) {
         stars[2].style.color = 'black';
         stars[2].style.display = display;
-        comment.textContent = 'Good!!';
+        comment.textContent = 'Ótimo!!';
     } else if (movesCounter >= 20) {
         stars[1].style.color = 'black';
         stars[1].style.display = display;
         stars[2].style.display = display;
-        comment.textContent = 'You can do it better!';
+        comment.textContent = 'Bom!';
     } else if (movesCounter <= 12) {
         stars[1].style.display = 'inline-block';
         stars[2].style.display = 'inline-block';
         stars[2].style.color = color || 'orange';
         stars[1].style.color = color || 'orange';
-        comment.textContent = 'Perfect!!!';
+        comment.textContent = 'Perfeitot!!!';
     }
 }

@@ -14,10 +14,11 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: larger;
 }
 
 body {
-    background: #d5dee2 url('../img/bg.jpg') bottom;
+    background: #d5dee2 url('../img/bg.jpg') fixed center;
     background-size: cover;
     font-family: 'Coda', cursive;
 }
@@ -62,11 +63,11 @@ svg {
 }
 
 .fallback-png-1 {
-    background-image: url(../img/png/02.png);
+    background-image:  url(../img/png/h.png);
 }
 
 .fallback-png-2 {
-    background-image: url(../img/png/03.png);
+    background-image: url(../img/png/f.png)     ;
 }
 
 .fallback-png-3 {
@@ -99,10 +100,10 @@ svg {
  */
 
 .deck {
-    width: 660px;
-    min-height: 680px;
+    width: 850px;
+    min-height: 700px;
     background: linear-gradient(160deg, #045d9b 0%, #1b8edc 100%);
-    padding: 32px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
     display: flex;
@@ -113,8 +114,8 @@ svg {
 }
 
 .deck .card {
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 190px;
     background: #083961;
     font-size: 0;
     color: #ffffff;
@@ -152,7 +153,7 @@ svg {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 500px;
     margin-bottom: 10px;
     color: #d5dee2;
 }
@@ -171,15 +172,18 @@ svg {
 }
 
 .score-panel .timer {
-    display: inline;
+    display: inline-block;
     position: absolute;
     left: 56%;
 }
 
-.score-panel .restart {
+.score-panel .restart  {
     float: right;
     cursor: pointer;
+
 }
+
+
 
 /*
  * Styles for the Final Score Modal
@@ -210,7 +214,8 @@ svg {
 
 .final-score.modal .play-again {
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1.5em;
+
 }
 
 .final-score.modal .fa.fa-times {

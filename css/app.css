@@ -94,12 +94,52 @@ svg {
 }
 
 .fallback-png-7 {
-    background-image: url(../img/png/sodio.png);
+    background-image: url(../img/png/calcio.png);
 
 }
 
 .fallback-png-8 {
     background-image: url(../img/png/uranio.png);
+
+}
+
+.fallback-png-9 {
+    background-image:  url(../img/png/arsenic2.png);
+
+}
+
+.fallback-png-10 {
+    background-image: url(../img/png/cobre2.png)     ;
+
+}
+
+.fallback-png-11 {
+    background-image: url(../img/png/fluor2.png);
+
+}
+
+.fallback-png-12 {
+    background-image: url(../img/png/fosforo2.png);
+
+}
+
+.fallback-png-13 {
+    background-image: url(../img/png/helio2.png);
+
+}
+
+.fallback-png-14 {
+    background-image: url(../img/png/potassio2.png);
+
+}
+
+.fallback-png-15 {
+    background-image: url(../img/png/calcio2.png);
+
+}
+
+.fallback-png-16 {
+    background-image: url(../img/png/uranio2.png);
 
 }
 

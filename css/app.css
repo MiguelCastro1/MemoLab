@@ -63,6 +63,11 @@ svg {
     height: 95%;
 }
 
+.fallback-png-0 {
+    background-image:  url(../img/png/1.png);
+
+}
+
 .fallback-png-1 {
     background-image:  url(../img/png/arsenic.png);
 
@@ -165,7 +170,11 @@ svg {
 .deck .card {
     height: 190px;
     width: 190px;
-    background: #083961;
+    background-color: #083961;
+    background-image: url(../img/png/q2.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: 0;
     color: #ffffff;
     border-radius: 8px;

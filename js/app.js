@@ -113,7 +113,16 @@ deck.addEventListener('click', function(e) {
 
 // TODO: Reveal cards
 for(let card of cards) {
+   // svg = '<svg role="img" class="icon fallback fallback-png-'+ 0 +'" title="0' + 0 + '"></svg>';
+
+   // card.style.backgroundImage = "url('../img/png/1.png')";
+  //  card.style.backgroundSize= 'contain';
+  //  card.style.backgroundRepeat= 'no-repeat';
+  //  card.style.backgroundPosition= 'center';
+    //card.style.width: 100%;
+    //card.style.height: 95%;
     card.addEventListener('click', show);
+    console.log(card)
    // card.addEventListener('keydown', evento);
 
 }

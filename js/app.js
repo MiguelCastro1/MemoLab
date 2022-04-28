@@ -35,10 +35,10 @@ catch(err) {
             li.className = 'card';
             if (i > 8) {
                 let j = i - 8;
-                svg = '<svg role="img" class="icon" title="0' + j + '"><use xlink:href="./img/sprites.svg#icon-' + j + '"></use></svg>';
+                svg = '<svg role="img" class="icon fallback fallback-png-'+ i +'" title="0' + j + '"></svg>';
                 li.innerHTML = svg;
             } else  {
-                svg = '<svg role="img" class="icon" title="0' + i + '"><use xlink:href="./img/sprites.svg#icon-' + i + '"></use></svg>';
+                svg = '<svg role="img" class="icon fallback fallback-png-'+ i +'" title="0' + i + '"></svg>';
                 li.innerHTML = svg;
             }
             cardsList.push(li);

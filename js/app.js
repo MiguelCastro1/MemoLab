@@ -5,15 +5,7 @@ const deck = document.querySelector('.deck');
 const ul = document.createDocumentFragment();
 const cardsList = [];
 
-// TODO: Use svg or png format to display icons according the file path
-const uri = document.baseURI;
-const uriContains = uri[0] + uri[1] + uri[2] + uri[3] + uri[4] + uri[5] + uri[6] + uri[7];
-try {
-    if (uriContains.toLowerCase() === 'file:///') throw true;
-	if (uriContains.toLowerCase() !== 'file:///') throw false;
-}
-catch(err) {
-	if (err) {
+
         for(let i = 1; i <= 16; i++) {
             const li = document.createElement('li');
             let svg = '';
@@ -28,23 +20,7 @@ catch(err) {
             }
             cardsList.push(li);
         }
-	} else if (!err) {
-        for(let i = 1; i <= 16; i++) {
-            const li = document.createElement('li');
-            let svg = '';
-            li.className = 'card';
-            if (i > 8) {
-                let j = i - 8;
-                svg = '<svg role="img" class="icon fallback fallback-png-'+ i +'" title="0' + j + '"></svg>';
-                li.innerHTML = svg;
-            } else  {
-                svg = '<svg role="img" class="icon fallback fallback-png-'+ i +'" title="0' + i + '"></svg>';
-                li.innerHTML = svg;
-            }
-            cardsList.push(li);
-        }
-	}
-}
+	
 
 const shuffledCards = shuffle(cardsList);
 for(let card of shuffledCards) {

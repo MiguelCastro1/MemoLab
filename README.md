@@ -1,20 +1,22 @@
-# Memory Game Project
+# Projeto Jogo da Memória: Química e Tabela Periódica
+## Visão Geral
+Este projeto apresenta um jogo da memória interativo, projetado para auxiliar no aprendizado de química e na familiarização com a tabela periódica. O jogo combina diversão com educação, desafiando os jogadores a combinar cartas com símbolos químicos e elementos da tabela periódica.
 
-A memory game for learnig chemistry and periodic table.
+## Como Jogar
+O objetivo é encontrar pares de cartas correspondentes com o mínimo de movimentos possível:
 
-## How to play
-Try to match the cards with its respective pair with as few moves as possible.
-- Reveal cards by clicking on them
-- Only two cards can be revealed at a time
-- If the symbols on the cards do not match the cards will revert to the original position
-- If the symbols match the revealed cards will remain open
-- Game is successfully completed when all pairs of cards have been matched to each other
-
-## Tools used
-- HTML
-- CSS
-- javaScript
-- [svg-sprite-generator](https://github.com/frexy/svg-sprite-generator)
+Clique nas cartas para revelá-las.
+Apenas duas cartas podem ser reveladas por vez.
+Se as cartas reveladas não formarem um par, elas voltarão à posição original.
+Se formarem um par, permanecerão abertas.
+O jogo é concluído com sucesso quando todos os pares forem encontrados.
+Ferramentas Utilizadas
+HTML: Para a estrutura básica do jogo.
+CSS: Para estilização e efeitos visuais.
+JavaScript: Para a lógica do jogo e interatividade.
+svg-sprite-generator: Utilizado para gerar sprites SVG, facilitando a manipulação gráfica dos elementos da tabela periódica.
+Educação e Diversão
+Este jogo é uma ótima ferramenta para estudantes que estão aprendendo sobre a tabela periódica e conceitos de química, proporcionando uma maneira divertida de reforçar o aprendizado através da prática.
 
 ## Credits
 - Changed by ([Miguel Castro])
